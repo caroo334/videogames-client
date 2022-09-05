@@ -1,0 +1,19 @@
+.search-button{
+    color: white;
+    backdrop-filter: blur(15px);
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 15px rgb(34, 34, 177);
+}
+
+.search-button:hover{
+    cursor: pointer;
+    background-color: rgb(34, 34, 177);
+}
+
+.search-input{
+    padding: 10px;
+    max-width: 240px;
+    
+}

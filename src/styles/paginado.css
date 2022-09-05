@@ -1,0 +1,27 @@
+.paginado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightslategray; */
+}
+
+.list-number{
+    padding: 10px;
+    background-color: transparent;
+    border: solid 1px rgb(34, 34, 177);
+    margin: 0px 1px 0px 1px;
+    list-style: none;
+    box-shadow: 0 0 15px rgb(34, 34, 177);
+}
+
+.a-number{
+    padding: 15px;
+}
+
+.a-number:hover{
+    cursor: pointer;
+}
+.list-number:hover{
+ backdrop-filter: blur(10px);
+}
+
