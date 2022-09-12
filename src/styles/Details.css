@@ -45,8 +45,8 @@
     font-weight: bold;
     text-align: justify;
     padding: 30px;
-    background-color: lightslategray;
-    opacity: 50%;
+    /* background-color: lightslategray; */
+    /* opacity: 50%; */
     border-radius: 15px;
 }
 
@@ -55,8 +55,8 @@
 }
 
 .detail-rating {
-    background-color: black;
-    opacity: 50%;
+    /* background-color: black; */
+    /* opacity: 50%; */
     background-size: auto;
     padding: 10px;
     border-radius: 15px;
@@ -137,7 +137,6 @@
     .detail-description{
       max-width: 30rem ;
       margin: 20px 10px 0px 10px;
-      opacity: 50%;
       display: flex;
       justify-self: center;
       align-self: center;
