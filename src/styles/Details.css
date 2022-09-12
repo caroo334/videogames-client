@@ -137,6 +137,7 @@
     .detail-description{
       max-width: 30rem ;
       margin: 20px 10px 0px 10px;
+      opacity: 50%;
       display: flex;
       justify-self: center;
       align-self: center;
