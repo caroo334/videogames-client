@@ -16,6 +16,8 @@ body {
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
+  
+  width: 100%;
 }
 
 .home-container {
@@ -28,12 +30,18 @@ body {
   color: white;
   font-weight: bolder;
 
+
+
 }
 
 .home-nav {
+  width: 100%;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-self: center;
+  align-self:center ;
 
 }
 
@@ -42,11 +50,10 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-auto-rows: minmax(300px, auto);
   grid-gap: 20px;
-
-  padding: 10px;
-
- 
+  padding: 4rem;
+   
 }
+
 .Cards{
   display: flex;
   justify-content: center;
@@ -54,20 +61,25 @@ body {
   box-shadow: 0 0 15px black;
   backdrop-filter: blur(15px);
   border-radius: 15px;
-  margin: 5px;
+  /* margin: 5px; */
   max-height: 400px ;
-  padding: auto;
+  /* padding: auto; */
 }
 
 
 
+@media (max-width: 900px){
+  .reload{
+    display: none !important;
+  }
+}
 .reload{
   max-height: 70px;
   max-width: 130px;
 }
 
+/* Diseño boton */
 
-/* From uiverse.io by @menezes11 */
 .home-button {
   position: relative;
   padding: 1rem 1rem;
@@ -167,7 +179,7 @@ body {
 
 /*   LOADING  */
 
-.container-loader{
+/* .container-loader{
   justify-self: center ;
   align-self: center ;
  
@@ -236,4 +248,82 @@ body {
             -70px 90px 0 #f2f2f2,
             -70px 90px 0 rgba(0, 0, 0, 0);
   }
+} */
+
+
+/* Responsive Desing*/
+
+@media (max-width: 823px){
+
+  .container-loader{
+    justify-self: center ;
+    align-self: center ;
+   
+  }
+  
+  .loader {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    margin: 0 auto;
+  }
+  
+  .loader:before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #2a9d8f;
+    animation: loading-bounce 0.5s ease-in-out infinite alternate;
+  }
+  
+  .loader:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 7px;
+    width: 45px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+    animation: loading-step 1s ease-in-out infinite;
+  }
+  
+  @keyframes loading-bounce {
+    0% {
+      transform: scale(1, 0.7);
+    }
+  
+    40% {
+      transform: scale(0.8, 1.2);
+    }
+  
+    60% {
+      transform: scale(1, 1);
+    }
+  
+    100% {
+      bottom: 140px;
+    }
+  }
+  
+  @keyframes loading-step {
+    0% {
+      box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+              0 10px 0 #f2f2f2,
+              -35px 50px 0 #f2f2f2,
+              -70px 90px 0 #f2f2f2;
+    }
+  
+    100% {
+      box-shadow: 0 10px 0 #f2f2f2,
+              -35px 50px 0 #f2f2f2,
+              -70px 90px 0 #f2f2f2,
+              -70px 90px 0 rgba(0, 0, 0, 0);
+    }
+  }
+
 }

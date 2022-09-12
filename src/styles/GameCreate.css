@@ -1,5 +1,4 @@
-
-.create-game-container{
+.create-game-container {
     width: 100%;
     height: 100vh;
     background-image: url('https://i.pinimg.com/originals/2f/94/e3/2f94e3132df9d5baac2de1ffef40df3b.jpg');
@@ -8,44 +7,55 @@
     color: white;
     font-weight: bolder;
     background-repeat: no-repeat;
-    
+
 }
 
-.error{
+.error {
     color: red;
 }
 
-.name{
+.name {
     padding: 35px;
 }
-.detail{
+
+/* .detail{
     padding: 35px;
     position: absolute;
     top: 235px;
     left: 250px;
     right: 750px;
+} */
+.detail {
+    display: flex;
 }
-.reviews{
+
+.reviews {
+    display: flex;
+    margin-top: 15px;
+}
+
+/* .reviews{
     padding: 35px;
     position: absolute;
     top: 350px;
     left: 250px;
     right: 750px;
     
-}
-.image{
+} */
+.image {
     padding: 35px;
-    
+
 }
 
-input{
+input {
     margin: 30px;
     border-radius: 9px;
     background-color: transparent;
     color: white;
     border: 1.5px solid #1a73e8;
 }
-textarea{
+
+textarea {
     margin-top: 30px;
     text-align: center;
     border-radius: 9px;
@@ -55,18 +65,26 @@ textarea{
     color: white;
 }
 
-li{
-    list-style: none;;
+@media (max-width: 700px) {
+    textarea {
+        max-width: 300px;
+    }
 }
-.form{
+
+li {
+    list-style: none;
+    ;
+}
+
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.form select{
+.form select {
     margin: 20px;
 }
 
@@ -154,9 +172,9 @@ li{
     cursor: pointer;
     background-color: transparent;
     transform: translateY(8px)
-   }
-   
-   .form-button:after {
+}
+
+.form-button:after {
     content: '';
     position: absolute;
     left: 0;
@@ -164,13 +182,13 @@ li{
     bottom: 0;
     box-shadow: 0px 0 0 0 white;
     transition: all 2s ease;
-   }
-   
-   .form-button:hover:after {
+}
+
+.form-button:hover:after {
     box-shadow: 0px -13px 56px 12px #ffffffa6;
-   }
-   
-   .form-button span {
+}
+
+.form-button span {
     position: absolute;
     width: 100%;
     font-size: 15px;
@@ -179,16 +197,16 @@ li{
     top: 39%;
     letter-spacing: 3px;
     text-align: center;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: #1a73e8;
     transition: all 2s ease;
-   }
-   
-   .form-button:hover span {
+}
+
+.form-button:hover span {
     color: white;
-   }
-   
-   .form-button:before {
+}
+
+.form-button:before {
     content: '';
     position: absolute;
     width: 0;
@@ -198,12 +216,8 @@ li{
     top: 50%;
     transform: translate(-50%, -50%);
     transition: all 1s ease;
-   }
-   
-   .form-button:hover:before {
+}
+
+.form-button:hover:before {
     width: 100%;
-   }
-
-
-   
-   
+}
