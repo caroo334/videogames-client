@@ -117,20 +117,28 @@ export default function Home() {
                     allGames={allGames.length}
                     paginado={paginado} />
 
-                {
-                    currentGame?.map(a => {
-                        return (
 
 
-                            <Link to={"/game/" + a.id}>
-                                <div className="Cards">
-                                    <Card name={a.name} image={a.background_image ? a.background_image : a.image ? a.image : <img src='https://i.pinimg.com/originals/b3/85/29/b3852980264d563f343cfa0f2de41833.jpg' />} rating={a.rating} reviews={a.reviews_text_count} key={a.id} />
-                                </div>
-                            </Link>
+                <div className="home-cards-container">
+                    {
 
-                        )
-                    })
-                }
+                        currentGame.length > 0 ? currentGame.map(a => {
+                            return (
+
+
+                                <Link to={"/game/" + a.id} style={{textDecoration: 'none', color: 'white'}}>
+                                    <div className="Cards">
+                                        <Card name={a.name} image={a.background_image ? a.background_image : a.image ? a.image : <img src='https://i.pinimg.com/originals/b3/85/29/b3852980264d563f343cfa0f2de41833.jpg' />} rating={a.rating} reviews={a.reviews_text_count} key={a.id} />
+                                    </div>
+                                </Link>
+
+                            )
+                        }) : <div className="container-loader"> <div class="loader"></div> </div>
+
+                    }
+
+                </div>
+
             </div>
         </div>
     );

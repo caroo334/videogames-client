@@ -25,7 +25,7 @@ export function getGames(genres) {
         })
     }
 };
-/////////////////// desde aca
+
 export function postGames(payload) {
     return async function (dispatch) {
         const response = await axios.post(`${process.env.REACT_APP_MY_API_URL}/games`, payload);
@@ -51,7 +51,6 @@ export function getDetail(id) {
     }
 }
 
-//////////////////Hasta aca me falta hacer el back
 
 export function filterCreated(payload) {
     return {

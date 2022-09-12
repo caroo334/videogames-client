@@ -106,7 +106,7 @@ export default function GameCreate() {
                         type='text'
                         value={input.name}
                         name='name'
-                        id='namr'
+                        id='name'
                     />
                     {errors.name && (
                         <p className="error">{errors.name}</p>
