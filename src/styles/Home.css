@@ -180,6 +180,10 @@ body {
 
 /*   LOADING  */
 
+.container-loader{
+ margin-top: 5rem;
+}
+
 /* .container-loader{
   justify-self: center ;
   align-self: center ;
@@ -254,7 +258,7 @@ body {
 
 /* Responsive Desing*/
 
-@media (max-width: 823px){
+
 
   .container-loader{
     justify-self: center ;
@@ -327,4 +331,3 @@ body {
     }
   }
 
-}
